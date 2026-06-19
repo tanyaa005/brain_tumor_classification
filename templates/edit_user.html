@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Edit User{% endblock %}
+
+{% block content %}
+
+<h2>Edit User</h2>
+
+<form method="POST">
+    <input type="text" name="username" class="form-control mb-2" value="{{ user.username }}" readonly>
+    
+    <input type="email" name="email" class="form-control mb-2" value="{{ user.email }}">
+
+    <select name="status" class="form-control mb-3">
+        <option value="1" {% if user.status == 1 %}selected{% endif %}>Active</option>
+        <option value="0" {% if user.status == 0 %}selected{% endif %}>Inactive</option>
+    </select>
+
+    <button class="btn btn-success">Update</button>
+</form>
+
+{% endblock %}

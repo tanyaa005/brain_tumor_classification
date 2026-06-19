@@ -1,0 +1,12 @@
+flask
+flask-jwt-extended
+mysql-connector-python
+python-dotenv
+flask_mysqldb
+tensorflow==2.13.0
+opencv-python
+numpy
+scikit-learn
+matplotlib
+flask-bcrypt
+PyJWT
